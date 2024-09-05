@@ -21,7 +21,7 @@ const images = [
     },
   },
   {
-    src: "/GovMesh/images/Paul-Mashatile.jpg",
+    src: "/images/Paul-Mashatile.jpg",
     name: "Paul Mashatile",
     choices: [
       "David Masondo",
@@ -29,7 +29,7 @@ const images = [
       "Ronald Lamola",
       "Paul Mashatile",
     ],
-    info: { "Paul Mashatile": "Paul Mashatile is a South African politician." },
+    info: { "Paul Mashatile": "Paul Mashatile is the Deputy President of South Africa" },
   },
   {
     src: "/images/JohnSteenhuisenMinister.jpg",
@@ -44,12 +44,16 @@ const images = [
     },
   },
   {
-    src: "/GovMesh/images/Ramokgopa-Kgosientsho.jpg",
-    name: "Ramokgopa Kgosientsho",
-    choices: ["Cat", "Ramokgopa Kgosientsho", "Mountain", "Beach"],
+    src: "/images/MzwaneleNyhontso.jpg",
+    name: "Mzwanele Nyhontso",
+    choices: [
+        "Mzwanele Nyhontso", 
+        "Ramokgopa Kgosientsho", 
+        " Solly Malatsi", 
+        "Samantha Graham"],
     info: {
-      "Ramokgopa Kgosientsho":
-        "Ramokgopa Kgosientsho is a South African politician.",
+      "Mzwanele Nyhontso":
+        "Mzwanele Nyhontso is the Minister of Land Reform and Rural Development.",
     },
   },
   {
