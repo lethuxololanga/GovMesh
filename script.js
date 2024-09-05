@@ -3,7 +3,7 @@ const questionElement = document.getElementById("question");
 const choicesElement = document.getElementById("choices");
 const feedbackElement = document.getElementById("feedback");
 const infoListElement = document.getElementById("info-list");
-const backButton = document.getElementById("back-button");
+
 
 const images = [
   {
@@ -107,7 +107,7 @@ function checkAnswer(selected, correct, info) {
     feedbackElement.className = "feedback correct"; // Set correct feedback style
     feedbackElement.style.display = "block"; // Show feedback
     setTimeout(() => {
-      swipe(); // Move to the next image after a delay
+      goToNextImage(); // Move to the next image after a delay
     }, 1000); // Adjust delay as needed
   } else {
     feedbackElement.textContent = "Incorrect!";
@@ -117,7 +117,7 @@ function checkAnswer(selected, correct, info) {
       updateInfo(info); // Show the Did You Know section if info is available
     }
     setTimeout(() => {
-      swipe(); // Move to the next image after a delay
+      goToNextImage(); // Move to the next image after a delay
     }, 5000); // Wait 5 seconds before moving to the next question
   }
 }
@@ -132,14 +132,10 @@ function updateInfo(info) {
   }
 }
 
-function swipe() {
-  card.style.transform = "translateX(100%)";
-  setTimeout(() => {
-    previousIndex = currentIndex; // Store the current index before changing
-    currentIndex = (currentIndex + 1) % images.length;
-    updateCard();
-    card.style.transform = "translateX(0)";
-  }, 400);
+function goToNextImage() {
+  previousIndex = currentIndex; // Store the current index before changing
+  currentIndex = (currentIndex + 1) % images.length;
+  updateCard();
 }
 
 function goBack() {
@@ -149,5 +145,17 @@ function goBack() {
   }
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".hamburger");
+  const navbar = document.querySelector(".navbar");
+  const appContainer = document.querySelector(".app-container");
+
+  hamburger.addEventListener("click", function () {
+      navbar.classList.toggle("open");
+      appContainer.classList.toggle("open");
+  });
+});
+
+
 updateCard();
-backButton.addEventListener("click", goBack);
+

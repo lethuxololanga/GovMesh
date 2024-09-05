@@ -7,8 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="app-container">
-        <!-- <button id="back-button">Back</button> -->
+
+    <!-- Hamburger icon -->
+    <div class="hamburger">☰</div>
+
+    <!-- Navigation sidebar -->
+    <div class="navbar collapsed" class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">Quiz</a></li>
+            <li class="nav-item"><a href="#">Leaders</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main content area -->
+    <div class="app-container collapsed">
         <div class="card-container">
             <div id="feedback" class="feedback"></div>
             <div class="card" id="card"></div>
@@ -18,10 +32,11 @@
             <div id="choices"></div>
         </div>
         <div id="info-container">
-            <h2>Did You Know?</h2>
+            <h3>Correct Answer</h3>
             <ul id="info-list"></ul>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
