@@ -71,7 +71,7 @@ const images = [
     },
   },
   {
-    src: "https://www.gcis.gov.za/sites/default/files/pictures/cabinet/SollyMalatsiMinisterCommunicationsDigitalTechnologies.jpg",
+    src: "https://www.gcis.gov.za/sites/default/files/pictures/Ramokgopa-Kgosientsho-MinPresidencyElectricity.jpg",
     name: "Maropene Ramokgopa",
     choices: [
       "Kgosientsho Ramokgopa",
@@ -93,7 +93,7 @@ const images = [
       "Velinkosi Hlabisa",
     ],
     info: {
-      "Velinkosi Hlabisa": "Maropene Ramokgopa is a South African politician who has been the Minister in the Presidency Responsible for Planning, Monitoring and Evaluation since March 2023.",
+      "Velinkosi Hlabisa": "Velenkosini Fiki Hlabisa (born 4 January 1965) is a South African politician and former teacher who is currently serving as Minister of Cooperative Governance and Traditional Affairs since June 2024. He has been President of the Inkatha Freedom Party (IFP) since 2019 and a Member of the National Assembly of South Africa since 2023. He is the party's parliamentary leader. He previously served as the Secretary-General of the IFP from 2011 to 2017, as the Mayor of the Big Five Hlabisa Local Municipality from 2016 to 2019 and as the Leader of the Opposition in the KwaZulu-Natal Legislature between 2019 and 2023.",
     },
   },
 ];
