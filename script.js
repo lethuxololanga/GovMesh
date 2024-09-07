@@ -34,7 +34,12 @@ const images = [
   {
     src: "https://www.gcis.gov.za/sites/default/files/pictures/cabinet/SiviweGwarubeMinisterBasicEducation.jpg",
     name: "Siviwe Gwarube",
-    choices: ["Sindisiwe Chikunga", "Lindiwe Ntshalintshali", "Siviwe Gwarube", "Barbara Creecy"],
+    choices: [
+      "Sindisiwe Chikunga", 
+      "Lindiwe Ntshalintshali", 
+      "Siviwe Gwarube", 
+      "Barbara Creecy"
+    ],
     info: {
       "Siviwe Gwarube": "Siviwe Gwarube is a South African politician who is currently serving as Minister of Basic Education since July 2024. A member of the Democratic Alliance, she was the Chief Whip of the Official Opposition between August 2022 and June 2024.",
     },
@@ -50,6 +55,45 @@ const images = [
     ],
     info: {
       "Paul Mashatile": "Paulus Shipokosa Mashatile is a South African politician who is the 9th Deputy President of South Africa. He became Deputy President of the governing African National Congress in December 2022.",
+    },
+  },
+  {
+    src: "https://www.gcis.gov.za/sites/default/files/pictures/cabinet/SollyMalatsiMinisterCommunicationsDigitalTechnologies.jpg",
+    name: "Solly Malatsi",
+    choices: [
+      "Senzo Mchunug",
+      "Solly Malatsi",
+      "Parks Tauv",
+      "Stella Ndabeni-Abrahams",
+    ],
+    info: {
+      "Solly Malatsi": "Mmoba Solomon (Solly) Malatsi is a South African politician who is currently serving as Minister of Communications and Digital Technologies since June 2024. He has been a Member of the National Assembly of South Africa since May 2014.",
+    },
+  },
+  {
+    src: "https://www.gcis.gov.za/sites/default/files/pictures/cabinet/SollyMalatsiMinisterCommunicationsDigitalTechnologies.jpg",
+    name: "Maropene Ramokgopa",
+    choices: [
+      "Kgosientsho Ramokgopa",
+      "Solly Malatsi",
+      "Maropene Ramokgopa",
+      "Thembi Nkadimeng",
+    ],
+    info: {
+      "Maropene Ramokgopa": "Maropene Ramokgopa is a South African politician who has been the Minister in the Presidency Responsible for Planning, Monitoring and Evaluation since March 2023.",
+    },
+  },
+  {
+    src: "https://www.gcis.gov.za/sites/default/files/pictures/cabinet/VelinkosiHlabisaCooperativeGovernanceTraditionalAffairs.jpg",
+    name: "Velinkosi Hlabisa",
+    choices: [
+      "Kgosientsho Ramokgopa",
+      "Blade Nzimande",
+      "Ronald Lamola",
+      "Velinkosi Hlabisa",
+    ],
+    info: {
+      "Velinkosi Hlabisa": "Maropene Ramokgopa is a South African politician who has been the Minister in the Presidency Responsible for Planning, Monitoring and Evaluation since March 2023.",
     },
   },
 ];
