@@ -97,7 +97,7 @@ const images = [
     },
   },
   {
-    src: "https://www.gcis.gov.za/sites/default/files/pictures/cabinet/KgosientshoRamokgopaMinisterElectricityEnergy.jpg",
+    src: "https://www.gcis.gov.za/sites/default/files/pictures/Ramokgopa-Kgosientsho-MinPresidencyElectricity.jpg",
     name: "Kgosientsho Ramokgopa",
     choices: [
       "Kgosientsho Ramokgopa",
@@ -167,7 +167,7 @@ const images = [
     }
   },
   {
-    src: "https://www.gcis.gov.za/sites/default/files/pictures/cabinet/EnochGodongwanaMinisterFinance.jpg",
+    src: "https://www.gcis.gov.za/sites/default/files/pictures/cabinet/GodongwanaEnochMinisterFinance.jpg",
     name: "Enoch Godongwana",
     choices: [
       "Enoch Godongwana",
@@ -181,7 +181,7 @@ const images = [
     }
   },
   {
-    src: "https://www.gcis.gov.za/sites/default/files/pictures/cabinet/AaronMotsoalediMinisterHealth.jpg",
+    src: "https://www.gcis.gov.za/sites/default/files/pictures/cabinet/AaronMotsoalediMininisterHealth.jpg",
     name: "Aaron Motsoaledi",
     choices: [
       "Aaron Motsoaledi",
@@ -223,7 +223,7 @@ const images = [
     }
   },
   {
-    src: "https://www.gcis.gov.za/sites/default/files/pictures/cabinet/MmamolokoKubayiMinisterHumanSettlements.jpg",
+    src: "https://www.gcis.gov.za/sites/default/files/gallery/8460_large.jpg",
     name: "Mmamoloko Kubayi",
     choices: [
       "Mmamoloko Kubayi",
@@ -251,7 +251,7 @@ const images = [
     }
   },
   {
-    src: "https://www.gcis.gov.za/sites/default/files/pictures/cabinet/GwedeMantasheMinisterMineralPetroleumResources.jpg",
+    src: "https://www.gcis.gov.za/sites/default/files/gallery/GwedeMantashe-dme-700.jpg",
     name: "Gwede Mantashe",
     choices: [
       "Gwede Mantashe",
@@ -279,7 +279,7 @@ const images = [
     }
   },
   {
-    src: "https://www.gcis.gov.za/sites/default/files/pictures/cabinet/SenzoMchunuMinisterPolice.jpg",
+    src: "https://www.gcis.gov.za/sites/default/files/gallery/SenzoMchunu-dpsa_700.jpg",
     name: "Senzo Mchunu",
     choices: [
       "Senzo Mchunu",
@@ -293,7 +293,7 @@ const images = [
     }
   },
   {
-    src: "https://www.gcis.gov.za/sites/default/files/pictures/cabinet/KhumbudzoNtshavheniMinisterPresidency.jpg",
+    src: "https://www.gcis.gov.za/sites/default/files/pictures/ntshavheni-pres-l.gif",
     name: "Khumbudzo Ntshavheni",
     choices: [
       "Khumbudzo Ntshavheni",
@@ -307,7 +307,7 @@ const images = [
     }
   },
   {
-    src: "https://www.gcis.gov.za/sites/default/files/pictures/cabinet/MzamoButheleziMinisterPublicService.jpg",
+    src: "https://www.gcis.gov.za/sites/default/files/pictures/cabinet/MzamoButheleziMinisterPublicServiceAdministration.jpg",
     name: "Mzamo Buthelezi",
     choices: [
       "Mzamo Buthelezi",
@@ -349,7 +349,7 @@ const images = [
     }
   },
   {
-    src: "https://www.gcis.gov.za/sites/default/files/pictures/cabinet/PatriciaDeLilleMinisterTourism.jpg",
+    src: "https://www.gcis.gov.za/sites/default/files/docs/resourcecentre/multimedia/faces/ministers/De_Lille_Large.jpg",
     name: "Patricia De Lille",
     choices: [
       "Patricia De Lille",
@@ -363,7 +363,7 @@ const images = [
     }
   },
   {
-    src: "https://www.gcis.gov.za/sites/default/files/pictures/cabinet/ParksTauMinisterTradeIndustry.jpg",
+    src: "https://www.gcis.gov.za/sites/default/files/pictures/Parks-Tau-DepMinCooperativeGovernanceTraditionalAffairs.jpg`",
     name: "Parks Tau",
     choices: [
       "Parks Tau",
