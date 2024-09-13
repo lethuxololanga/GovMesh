@@ -5,22 +5,42 @@ const { Pool } = require('pg');
 const app = express();
 const port = 3000;
 
-// PostgreSQL connection
+// // PostgreSQL connection
+// const pool = new Pool({
+//   user: 'default',
+//   host: 'ep-cold-dew-a4gruvqr-pooler.us-east-1.aws.neon.tech',
+//   database: 'govmesh',
+//   password: 's1OWnHAqL5Zj',
+//   port: 5432,
+// });
+
+
+// PostgreSQL connection using the DATABASE_URL environment variable
 const pool = new Pool({
-  user: 'default',
-  host: 'ep-cold-dew-a4gruvqr-pooler.us-east-1.aws.neon.tech',
-  database: 'govmesh',
-  password: 's1OWnHAqL5Zj',
-  port: 5432,
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false,  // Required for Neon and managed databases
+  },
 });
 
-// Set up PostgreSQL connection using the environment variable
-// const pool = new Pool({
-//   connectionString: process.env.DATABASE_URL,
-//   ssl: {
-//     rejectUnauthorized: false // Required for Neon and other managed PostgreSQL services
-//   }
-// });
+// Test route to check database connection
+app.get('/test-db', async (req, res) => {
+  try {
+    // Query the current time from the database
+    const result = await pool.query('SELECT NOW()');
+    res.json({ success: true, time: result.rows[0].now });
+  } catch (err) {
+    console.error('Error connecting to the database:', err);
+    res.status(500).json({ success: false, message: 'Database connection failed', error: err });
+  }
+});
+
+// Start server on a specific port
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
+
 
 // Middleware
 app.use(bodyParser.json());
