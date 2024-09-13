@@ -5,23 +5,15 @@ const { Pool } = require('pg');
 const app = express();
 const port = 3000;
 
-// // PostgreSQL connection
-// const pool = new Pool({
-//   user: 'default',
-//   host: 'ep-cold-dew-a4gruvqr-pooler.us-east-1.aws.neon.tech',
-//   database: 'govmesh',
-//   password: 's1OWnHAqL5Zj',
-//   port: 5432,
-// });
-
-
-// PostgreSQL connection using the DATABASE_URL environment variable
+// PostgreSQL connection
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-  ssl: {
-    rejectUnauthorized: false,  // Required for Neon and managed databases
-  },
+  user: 'default',
+  host: 'ep-cold-dew-a4gruvqr-pooler.us-east-1.aws.neon.tech',
+  database: 'govmesh',
+  password: 's1OWnHAqL5Zj',
+  port: 5432,
 });
+
 
 // Test route to check database connection
 app.get('/test-db', async (req, res) => {
@@ -35,11 +27,7 @@ app.get('/test-db', async (req, res) => {
   }
 });
 
-// Start server on a specific port
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+
 
 
 // Middleware
@@ -95,6 +83,12 @@ app.post('/updatePoints', async (req, res) => {
 });
 
 // Start server
-app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+// app.listen(port, () => {
+//   console.log(`Server running on http://localhost:${port}`);
+// });
+
+// Start server on a specific port
+const PORT = process.env.PORT || 5432;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
